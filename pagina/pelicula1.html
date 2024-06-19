@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nombre de la Película 1</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212; /* Fondo oscuro */
+      color: #fff; /* Texto blanco */
+      text-align: center;
+    }
+
+    .pelicula-container {
+      max-width: 100%;
+      margin: 20px auto;
+      background-color: #1e1e1e; /* Fondo de la película */
+      border-radius: 8px; /* Bordes redondeados */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+      overflow: hidden;
+    }
+
+    .pelicula-banner {
+      width: 100%;
+      height: auto;
+    }
+
+    .pelicula-contenido {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .pelicula-titulo {
+      font-size: 1.5em;
+      color: #00BFFF; /* Color del título */
+      margin-bottom: 10px;
+    }
+
+    .pelicula-info {
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    .pelicula-descripcion {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .reproductor {
+      margin: 20px 0;
+    }
+
+    .boton-retroceder {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #fff;
+      background-color: #00BFFF; /* Color del botón */
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .boton-retroceder:hover {
+      background-color: #009ACD; /* Color del botón al pasar el ratón */
+    }
+  </style>
+</head>
+<body>
+  <div class="pelicula-container">
+    <img src="../assets/images/peliculabanner1.jpg" alt="Película 1" class="pelicula-banner">
+    <div class="pelicula-contenido">
+      <h1 class="pelicula-titulo">Nombre de la Película 1</h1>
+      <p class="pelicula-info" id="info-pelicula">Año: 2021 | Géneros: Acción, Aventura</p>
+      <p class="pelicula-descripcion" id="descripcion-pelicula">
+        Descripción detallada de la película 1. Aquí se puede agregar información sobre la trama, los personajes, el director, etc.
+      </p>
+      <div class="reproductor" id="reproductor-es">
+        <iframe src="URL_DEL_REPRODUCTOR_ES" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="reproductor" id="reproductor-en" style="display:none;">
+        <iframe src="URL_DEL_REPRODUCTOR_EN" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <a href="index.html" class="boton-retroceder">Volver a la lista de películas</a>
+    </div>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
+
+
